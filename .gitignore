@@ -1,0 +1,6 @@
+# Virtual Environment
+venv-gpu/
+
+# Python cache
+__pycache__/
+*.pyc
