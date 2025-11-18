@@ -11,7 +11,7 @@ model = torch.hub.load(
 print("Custom model loaded successfully.")
 
 # Define the path to your new test image
-image_path = 'car_test.jpg'  # Make sure this is in your main project folder
+image_path = 'car_test1.jpg'  # Make sure this is in your main project folder
 
 # Run detection
 print(f"Detecting brands in {image_path}...")

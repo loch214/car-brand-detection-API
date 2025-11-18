@@ -1,6 +1,12 @@
 # Virtual Environment
-venv-gpu/
+/venv-gpu/
 
-# Python cache
+# Local Dataset
+/Car-Brand-Dataset/
+
+# YOLOv5 Training Runs (very large)
+/yolov5/runs/
+
+# Python Cache
 __pycache__/
 *.pyc

@@ -1,7 +1,7 @@
-# Full paths to the train, validation, and test image folders
-train: D:/Doc/Other Projects/object_detect_api/Car-Brand-Dataset/train/images
-val: D:/Doc/Other Projects/object_detect_api/Car-Brand-Dataset/valid/images
-test: D:/Doc/Other Projects/object_detect_api/Car-Brand-Dataset/test/images
+# Full paths to the train, validation, and test image folders (CORRECTED)
+train: D:/Doc/Other Projects/car-brand-detection-API/Car-Brand-Dataset/train/images
+val: D:/Doc/Other Projects/car-brand-detection-API/Car-Brand-Dataset/valid/images
+test: D:/Doc/Other Projects/car-brand-detection-API/Car-Brand-Dataset/test/images
 
 # Number of classes
 nc: 19
@@ -9,7 +9,7 @@ nc: 19
 # Class names
 names: ['alpha-romeo', 'audi', 'bentley', 'benz', 'bmw', 'cadillac', 'dodge', 'ferrari', 'ford', 'ford-mustang', 'hyundai', 'kia', 'lamborghini', 'lexus', 'maserati', 'porsche', 'rolls-royce', 'tesla', 'toyota']
 
-# Roboflow metadata (leave as is)
+# Roboflow metadata
 roboflow:
   workspace: datasets-hpoew
   project: car-brand-detection-n6zpw
