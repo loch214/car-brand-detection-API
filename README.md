@@ -21,7 +21,7 @@ This project followed the complete end-to-end machine learning pipeline, includi
 **2. Model Training (Iterative Development):**
 *   **V1 Model (Nov 16, 2025):** An initial model was trained for **50 epochs**. Analysis showed it was highly biased towards the 'Toyota' class due to an imbalanced dataset.
 *   **V2 Model (Nov 18, 2025):** To address the bias, a second model was trained for **150 epochs** with **high-level data augmentation** (including random flips, rotations, and color changes). This forced the model to learn more robust features and significantly improved its overall accuracy.
-*   All training was performed locally on an **NVIDIA GeForce RTX 3050 6GB GPU**, which was critical for accelerating the training process.
+*   All training was performed locally on an NVIDIA GeForce RTX 3050 6GB GPU, which was critical for accelerating the training process.
 
 **3. Model Deployment:**
 *   The final, improved V2 model weights (`best.pt`) were saved.
