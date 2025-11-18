@@ -32,25 +32,31 @@ This project followed the complete end-to-end machine learning pipeline, includi
 
 ## Final Results & Analysis
 
-The final V2 API successfully loads the improved model and makes predictions.
+The final V2 model, trained for 150 epochs with aggressive data augmentation, showed a significant improvement in overall accuracy (mAP) compared to the V1 model. It is now capable of identifying a wider range of brands.
 
 #### **Prediction Example (Correct Prediction):**
 The V2 model correctly identifies a **Toyota** Prius.
 
 ![Correct Toyota Prediction](assets/toyota_prediction.png) (will add the image later)
 
-#### **Analysis of Model Weaknesses:**
-Testing the V2 model revealed a more nuanced challenge. When given an image of a white BMW SUV, the model incorrectly predicted it as `kia` and `hyundai`, albeit with very low confidence scores (19% and 18%).
+#### **Analysis of Model Limitations:**
+Despite the improvements, further testing revealed the model's limitations. When given an image of a white BMW SUV, the model incorrectly predicted it as `kia` and `hyundai`, albeit with very low confidence scores (19% and 18%).
 
 ![Incorrect BMW Prediction](assets/bmw_prediction.png)
 
-**Diagnosis:** This is a classic example of **low inter-class variance**. The model is confused by brands that have visually similar designs, such as modern SUVs. The low confidence scores indicate the model's uncertainty.
+**Diagnosis:** This result stems from two core challenges:
+
+1.  **Limited Dataset Size:** The training dataset contains only **~1700 images**. For a complex task with 19 visually similar classes, this is a relatively small dataset. The model has not seen enough examples of each brand in various conditions to build a highly confident understanding.
+
+2.  **Low Inter-class Variance:** The model's confusion is most apparent between brands with similar design languages (e.g., modern SUVs). The small dataset size makes it very difficult for the model to learn the subtle differences between these classes. The low confidence scores are a direct indicator of this uncertainty.
 
 **Future Improvements:**
-The clear next step for a V3 model would be **targeted data sourcing**. To resolve the confusion, one would need to add more training images specifically of the models and brands that are commonly mistaken for each other, forcing the model to learn the subtle, distinguishing features (like grille shape and headlight design).
+Based on this analysis, the clear path to a production-ready V3 model involves a data-centric approach:
 
-This project demonstrates a real-world understanding of the iterative nature of ML development: build, test, analyze, and improve.
+*   **Significant Data Sourcing:** The most critical step is to expand the dataset. A much larger and more diverse set of images (ideally 1,000+ per brand) would be required for the model to learn the subtle, distinguishing features and improve both accuracy and confidence.
+*   **Further Training:** With a larger dataset, training for more epochs (200+) would become more effective and yield better results.
 
+This project demonstrates a real-world understanding of the iterative nature of ML development: build, test, analyze the root cause of limitations, and define a clear path for improvement.
 ---
 
 ## Technology Stack
