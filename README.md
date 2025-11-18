@@ -37,7 +37,7 @@ The final V2 API successfully loads the improved model and makes predictions.
 #### **Prediction Example (Correct Prediction):**
 The V2 model correctly identifies a **Toyota** Prius.
 
-![Correct Toyota Prediction](assets/toyota_prediction.png)
+![Correct Toyota Prediction](assets/toyota_prediction.png) (will add the image later)
 
 #### **Analysis of Model Weaknesses:**
 Testing the V2 model revealed a more nuanced challenge. When given an image of a white BMW SUV, the model incorrectly predicted it as `kia` and `hyundai`, albeit with very low confidence scores (19% and 18%).
