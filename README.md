@@ -40,15 +40,3 @@ The entire training journey, including the code I used and my analysis, is docum
 3.  **Deployment:** The final V2 model was then deployed in a FastAPI application.
 
 ---
-
-## How to Run It
-
-This project uses Python 3.11. The model was trained using the `yolov5` submodule
-
-**1. Setup Environment:**
-Create a virtual environment and install dependencies. The main libraries are PyTorch, YOLOv5's requirements, and FastAPI.
-
-**2. Run the Server:**
-The `main.py` file contains the FastAPI application. To run it, use uvicorn:
-```bash
-uvicorn main:app --reload
