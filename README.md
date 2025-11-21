@@ -45,7 +45,7 @@ The entire training journey, including the code I used and my analysis, is docum
 
 ## How to Run It
 
-This project uses Python 3.11. The model was trained using the `yolov5` submodule.
+This project uses Python 3.11. The model was trained using the `yolov5` submodule
 
 **1. Setup Environment:**
 Create a virtual environment and install dependencies. The main libraries are PyTorch, YOLOv5's requirements, and FastAPI.
