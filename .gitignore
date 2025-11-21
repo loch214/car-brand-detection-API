@@ -1,12 +1,29 @@
-# Virtual Environment
+# --- VIRTUAL ENVIRONMENTS ---
+# Ignore all virtual environment folders.
+/venv/
 /venv-gpu/
 
-# Local Dataset
+# --- DATASETS ---
+# Ignore large dataset folders.
 /Car-Brand-Dataset/
 
-# YOLOv5 Training Runs (very large)
+# --- MODEL FILES ---
+# Ignore trained model weight files.
+*.pt
+
+# --- YOLOv5 OUTPUTS ---
+# Ignore the very large training run outputs.
 /yolov5/runs/
 
-# Python Cache
+# --- PYTHON CACHE FILES ---
+# Standard Python cache folders and files.
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# --- IDE / EDITOR METADATA ---
+# Ignore metadata folders from editors like VS Code.
+.vscode/```
+
+---
