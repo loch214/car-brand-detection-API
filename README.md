@@ -8,7 +8,6 @@ This was a learning experience, and the final model is **not a production-ready,
 
 ## What I Learned
 
-<<<<<<< HEAD
 *   **The Full ML Pipeline:** I successfully completed all the steps: sourcing a dataset, fine-tuning a YOLOv5 model, and deploying it with FastAPI.
 *   **CPU vs. GPU:** I experienced the massive speed difference between training on a CPU and a GPU (NVIDIA RTX 3050), which took the training time from hours to minutes.
 *   **Model Limitations:** My biggest takeaway was how much model performance depends on the dataset. My final model struggles because the dataset was small (~1700 images for 19 classes) and imbalanced. I learned to diagnose this by testing the model and analyzing its weak points.
