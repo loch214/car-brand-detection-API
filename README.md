@@ -28,7 +28,6 @@ This project followed the complete end-to-end machine learning pipeline, includi
 *   The final, improved V2 model weights (`best.pt`) were saved.
 *   A web server was built using **FastAPI**, creating a `/predict` endpoint that accepts image uploads.
 *   The API is served with Uvicorn, a high-performance ASGI server.
->>>>>>> b345b769532ce7095166c9ca5a1b6ffd881ac1a1
 
 ---
 
